@@ -1,0 +1,199 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-card: #00000065;
+    --Bckgr-container: #ffffff84;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--celeste_bacano));
+}
+
+.category-tittle{
+    font-family: 'ROLNER', 'Trebuchet MS';
+    font-size: 30px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-category-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bckgr-card);
+    height: 50px;
+    width: auto;
+    position: relative;
+    border-radius: 10px;   
+    margin: 2% 10%; 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+
+.category-car-container{
+    background-color: var(--Bckgr-container);
+    width: auto;
+    height: auto;
+    margin: 30px 4% 20px 4%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+
+.category-car{
+    display: flex;
+    background-color: var(--Bckgr-card);
+    width: auto;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;;
+    align-items: center;
+    padding: 20px 0px 20px 10px;
+}
+
+.category-car:hover{
+    /*background-color: var(--Bckgr-container);*/
+    transform: scale(1.009);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.category-car-image{
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.category-car-image:hover{
+    /*box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);*/
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-car-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 10px 10px;
+    background-color: var(--Bckgr-card);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+
+
+.category-car-name{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    color: var(--celeste_bacano);
+}
+
+.category-car-price{
+    font-size: 18px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white);
+}
+
+.category-car-description{
+    font-size: 16px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white);
+}
+
+.category-car-button{
+    background-color: var(--celeste_bacano);
+    color: var(--Black);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'ROLNER', sans-serif;
+    margin: 10px 25px 10px 25px;
+}
+
+.category-car-button:hover{
+    color: var(--white);
+    scale: 1.1;
+    transition: 0.1s ease-in, 0.1s ease-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}

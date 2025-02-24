@@ -1,0 +1,160 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-card: #00000065;
+    --Bckgr-contact: #00000065;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--Black), var(--celeste_bacano));
+}
+
+/* Syles pal contenedor */
+.form-Container {
+    background-color: var(--Bckgr-contact);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgb(208, 208, 208);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);*/
+    padding: 30px;
+    width: 650px;
+    /*margin-top: 3%;*/
+    margin: 3% 25% 3%;
+  }
+  /* Styles pa' Titulo */
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'ROLNER', sans-serif;
+  }
+
+  .form-Container h1 {
+    color: var(--celeste_bacano);
+  }
+
+  .form-Container p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'ROLNER', sans-serif;
+    color: var(--white);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--white);
+    
+  }
+  /* Styles pa' los inputs */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--white);
+  }
+
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    /*border: 1px solid var(--Hub);*/
+    box-shadow: 1px 1px 15px var(--Bckgr-card);
+    transition: 0.1s ease;
+  }
+  
+  /* Boton Enviar */
+  button {
+    background-color: var(--Black);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Style pa' el hover del boton y el tiempo de transicion */
+  button:hover {
+    background-color: var(--celeste_bacano);
+    transition: 0.3s ease;
+    color: var(--Black);
+    font-size: 19.3px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+  }

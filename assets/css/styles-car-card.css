@@ -1,0 +1,169 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-card: #00000065;
+    --Bckgr-card-shadow: #ffffff99;
+    --btn-card: #959594;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spoiler-Script';
+    src: url(../fonts/Spoilers-Script.woff2) format('woff2'),
+         url(../fonts/Spoilers-Script.woff) format('woff'),
+         url(../fonts/Spoilers-Script.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Cards */
+
+.car_card {
+    background-color: var(--Bckgr-card);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--Bckgr-card-shadow) 1px 1px 15px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    flex: 0 0 auto; /* Evita que flexbox las estreche */
+    min-width: 250px; /* Fuerza el ancho mínimo */
+    max-height: 600px;
+    margin-top:15% ;
+    margin-bottom: 10%;
+    margin-left: 4%;
+    gap: 10px;
+}
+
+.car_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px var(--Black);
+    margin-bottom: 10%;
+    margin-top: 5%;
+    object-fit: cover;
+}
+
+.car_name {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Open_car_button {
+    background-color: var(--btn-card);
+    color: var(--Black);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-family: 'ROLNER', sans-serif;
+}
+
+.Open_car_button:hover {
+    background-color: var(--Black);
+    color: var(--white);
+    font-size: 18px;
+    box-shadow: 1px 1px 10px var(--white);
+    transition: 0.3s ease;
+}
+
+.Project_car:hover{
+transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* swiper */
+
+.swiper-pagination{
+    display: flex;
+    margin-top: 4%;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper-slide tarjeta img{
+    margin-top: 100px;
+}
+
+.swiper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+}*/
+
+/*.swiper-button-next, .swiper-button-prev {
+    color: #ff9800;
+}*/
+
+/* .swiper-pagination-bullet {
+    background: var(--white);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff5722;
+    transform: scale(1.2);
+} */

@@ -1,0 +1,173 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Login */
+
+.login-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px;
+    width: 310px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 26%;
+    left: 38%;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+    color: var(--celeste_bacano);
+    font-family: 'ROLNER', sans-serif;
+}
+
+.login-container label{
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: var(--gris_super_palido);
+    font-size: 16px;
+    /*font-weight: bold;*/
+    font-family: 'ROLNER', sans-serif;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box; 
+        font-size: 14px; 
+        transition: all 0.3s ease;  
+    }
+
+.login-container button[type="submit"]{
+    background-color: var(--celeste_bacano);
+    /*background-color: #007bff;*/
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    color: var(--Black);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-family: 'ROLNER', sans-serif;
+}
+
+.login-container button[type="submit"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px var(--celeste_bacano);
+}
+
+/*Estilizando los inputs*/
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: var(--celeste_bacano);
+    outline: none;
+    box-shadow: 1px 1px 15px var(--celeste_bacano);
+    transition: 0.1s ease;
+}
+
+.login-container button:hover{
+    background-color: var(--nose);
+    transition: all 0.3s ease;
+    color: var(--white);
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+}
+
+.login-container p{
+    color: var(--gris_super_palido);
+    margin-top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-container p a{
+    color: var(--naranja_oscuro);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container p a:hover{
+    text-decoration: none;
+    color: #d19806;
+    transition: all 0.3s ease; 
+}

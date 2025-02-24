@@ -1,0 +1,86 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Hubfooter: #00000096;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.footPage {
+    background-color: var(--celeste_bacano);
+    color: var(--White);
+    margin: 20px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--Hubfooter);
+}
+
+footer{
+    padding: 10px;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 17px;
+}

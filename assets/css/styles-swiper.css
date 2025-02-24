@@ -1,0 +1,135 @@
+/* Styles del carousel */
+
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-card: #00000065;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+        url(../fonts/ROLNER.woff) format('woff'),
+        url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+        url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+        url(../fonts/Gefika.woff) format('woff'),
+        url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+        url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos generales */
+.carousel-container {
+    max-width: 100%;  /* Asegura que el carrusel ocupe todo el ancho disponible */
+    margin: 0 auto;   /* Centra el contenedor */
+    position: relative; /* Necesario para los controles */
+    overflow: hidden;  /* Oculta las partes del slider que se desborden */
+    height: 100%; /* Asegura que el contenedor no sea demasiado alto */
+    margin: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%; /* Hace que el contenedor se ajuste a su contenedor padre */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Asegura que cada diapositiva ocupe el 100% del alto del contenedor */
+}
+
+.swiper-slide img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho */
+    height: 100%; /* Las hace ocupar todo el alto */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor sin distorsionarse */
+    border-radius: 15px; /* Bordes redondeados opcionales */
+}
+
+/* Botones de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* Color blanco para los botones */
+    font-size: 30px; /* Tamaño de los botones */
+    position: absolute; /* Posiciona los botones en el slider */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Paginación (pequeños puntos debajo del carrusel) */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  

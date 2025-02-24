@@ -1,0 +1,93 @@
+<!-- Template del carousel -->
+
+<link rel="stylesheet" href="../css/styles-template.css">
+<link rel="stylesheet" href="../css/styles-carousel.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../js/swiper.js">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Tarjeta 1 -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="../img/car_templates/Bmw-azul.jpg" alt="Carro 1" />
+                    <h3>Carro 1</h3>
+                    <p>Descripción del carro 1</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="../img/car_templates/Mercedes-azul2.jpg" alt="Carro 2" />
+                    <h3>Carro 2</h3>
+                    <p>Descripción del carro 2</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="../img/car_templates/Mercedes-azul3.jpg" alt="Carro 3" />
+                    <h3>Carro 3</h3>
+                    <p>Descripción del carro 3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            },
+          });
+        });
+      </script>
+      
+
+</body>

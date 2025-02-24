@@ -1,0 +1,60 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-novedades: #00000065;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+.novedades{
+    display: flex;
+    background-color:var(--Bckgr-novedades);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--White);
+    margin: 30px;
+    box-shadow: var(--Black) 1px 1px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    overflow-x: hidden;
+}
+
+.novedades-title{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    color: var(--celeste_bacano);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    /*font-weight: 600;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}

@@ -1,0 +1,142 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles */
+
+header h1{
+    margin-top: -300px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--gris_super_palido);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url(../img/backgrounds/background-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    backdrop-filter: blur(1px);
+}
+
+.btn-go-back-index{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--secundary);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 18px;
+    padding: 8px 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-go-back-index:hover {
+    background-color: var(--Black);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.7);
+    color: var(--white);
+}

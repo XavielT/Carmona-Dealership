@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="preload" href="../assets/css/styles-login.css" as="style">
+        <link rel="stylesheet" href="../assets/css/styles-login.css">
+        <link rel="preload" href="../assets/css/styles-login-form.css" as="style">
+        <link rel="stylesheet" href="../assets/css/styles-login-form.css">
+        <link rel="preload" href="../assets/css/styles-logo-login.css" as="style">
+        <link rel="stylesheet" href="../assets/css/styles-logo-login.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo-login">
+                <span class="c-text">Carmona</span> <span class="highlight">DealerShip</span>
+            </h1>
+        </header>
+        <div class="background-blur">
+            <div class="login-container">
+                <h2>Iniciar Sesion</h2>
+
+                <form action="login.php" method="post">
+                    <label for="username"> Usuario: </label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password"> Contraseña: </label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit"> Ingresar </button>
+                </form>
+
+                <p> ¿No tienes una cuenta? <a href="#"> Registrate Aqui! </a></p>
+            </div>
+        </div>
+
+        <button class="btn-go-back-index" onclick="window.location.href='../index.html'">Volver a la Pagina Principal</button>
+    </body>
+</html>

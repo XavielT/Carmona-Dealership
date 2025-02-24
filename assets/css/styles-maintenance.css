@@ -1,0 +1,154 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(../img/backgrounds/background-maintenance.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    backdrop-filter: blur(2px);
+    min-height: 115%;
+    
+}
+
+/* Contenedor de la alerta */
+.maintenance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #00000050;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    backdrop-filter: blur(5px);
+}
+
+.maintenance h2 {
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.maintenance p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: var(--white);
+}
+
+.btn-go-back-index {
+    background-color: var(--Black);
+    color: var(--celeste_bacano);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*width: 100%;*/
+    font-family: 'ROLNER', sans-serif;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+    margin-top: 4px;
+}
+
+/*.btn-go-back-index:hover {
+    background-color: var(--celeste_bacano);
+    color: var(--Black);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+}*/
+
+.btn-go-back-index:hover {
+    background-color: var(--celeste_bacano);
+    color: var(--Black);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}

@@ -1,0 +1,192 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --navbar: #ffffff52;
+    --btn-user: #0000006e;
+    --btn-user-hover: #7575757e;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos Generales */
+
+/*Barra de Navegacion*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--celeste_bacano);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--HubShadow);
+    backdrop-filter: blur(10px);
+    margin: 0 30px 0 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: var(--white);
+    text-shadow: var(--Black) 1px 1px 5px;
+    transition: all 0.1s ease;
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buscador de la barra de navegacion */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 0px;
+    box-shadow: 0 0 10px var(--HubShadow);
+}
+
+/*.search-container:hover {
+    background-color: var(--celeste_bacano);
+    box-shadow: 0 0 10px var(--celeste_bacano);
+}*/
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;  
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px;
+    color: var(--Black);    
+    transition: all 0.3s ease;
+    font-family: 'ROLNER', sans-serif;
+    margin-right: 5px;    
+}
+
+.search-container input[type="text"]:focus {    
+    outline: none;
+    box-shadow: 0 0 5px var(--Black);    
+}    
+
+.search-container button[type="submit"] {
+    background-color: var(--Black);
+    border: none;
+    border-radius: 8px; 
+    padding: 10px;      
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'ROLNER', sans-serif;
+    font-size: 17px;
+    color: var(--white);
+    /*box-shadow: 0 0 10px var(--celeste_bacano);*/
+    margin-right: 15px;
+}
+
+.search-container button[type="submit"]:hover {
+    font-size: 18px;
+    box-shadow: 0 0 10px var(--Black);
+}
+
+/* Boton de Usuario */
+.btn-user {
+    background-color: var(--btn-user);
+    border: none;
+    border-radius: 60px; 
+    padding: 2px;      
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--white);
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.btn-user:hover {
+    box-shadow: 0 0 10px var(--Black);
+    background-color: var(--btn-user-hover);
+    /*box-shadow: 0 0 10px var(--secundario);*/
+    color: var(--Black);
+}

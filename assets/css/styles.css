@@ -1,0 +1,172 @@
+/* Mi paleta de colores */
+:root {
+    --Primario_Mamey: #fc4b08;
+    --Secundario: #cc00ff;
+    --Secundario_Hover: #b013d7;
+    --Negro: #212121;
+    --Rojo: #FF421A;
+    --Grisclaro: #dfe9f3;
+    --Amarillo: #ffc107;
+    --Hub: #ffb700;
+    --Hub_Dark: #dbb520;
+    --Hub_Contraste: #bb8d19;
+    --Gris_Oscuro: #757575;
+    --gris_super_palido: #E9EEE8;
+    --celeste_bacano: #0dcee8;
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --azul_marino: #007bff;
+    --white: #ffffff;
+    --Black: #000000;
+    --Bckgr-card: #00000065;
+    /* 
+    --Secundario: #e9a255;
+    --Secundario: #cc00ff;
+    --Secundario: #ff00e1;
+    */
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ROLNER';
+    src: url(../fonts/ROLNER.woff2) format('woff2'),
+         url(../fonts/ROLNER.woff) format('woff'),
+         url(../fonts/ROLNER.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baloba';
+    src: url(../fonts/Baloba-Free-Trial.woff2) format('woff2'),
+         url(../fonts/Baloba-Free-Trial.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gefika';
+    src: url(../fonts/Gefika.woff2) format('woff2'),
+         url(../fonts/Gefika.woff) format('woff'),
+         url(../fonts/Gefika.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon-Beach';
+    src: url(../fonts/Lemon-Beach.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work-krow';
+    src: url(../fonts/Work-krow.otf) format('opentype'),
+         url(../fonts/Work-krow.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    /*background: linear-gradient(to bottom, var(--Black), var(--celeste_bacano));*/
+    background-image: url(../img/backgrounds/background-index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    /*position: relative;*/
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    backdrop-filter: blur(2px);
+    min-height: 190%;
+    /*filter: blur(2px);*/
+    
+}
+
+.categorias-container {
+    background: transparent;
+}
+
+.categorias-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.categorias h2{
+    text-align: center;
+    width: 100%;
+    color: var(--celeste_bacano);
+    font-family: 'ROLNER', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.novedades h2{
+    font-family: 'ROLNER', sans-serif;
+}
+
+.car-category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Bckgr-card);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: var(--Black);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.car-category:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.car-category img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.car-category h4{
+    color: var(--white);
+}
+
+.car-category-btn{
+    background-color: var(--celeste_bacano);
+    color: var(--Black);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-family: 'ROLNER', sans-serif;
+}
